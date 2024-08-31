@@ -1,0 +1,115 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|8||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|[Label]|RESTART|1|0|Label|||||1|
+2|s|{s Down}|1|1500|Send|||||2|
+3|s|{s Up}|1|0|Send|||||4|
+4|a|{a Down}|1|3500|Send|||||5|
+5|a|{a Up}|1|0|Send|||||7|
+6|Space|{Space Down}|1|100|Send|||||8|
+7|Space|{Space Up}|1|0|Send|||||10|
+8|a|{a Down}|1|1000|Send|||||11|
+9|a|{a Up}|1|0|Send|||||13|
+10|Space|{Space Down}|1|100|Send|||||14|
+11|Space|{Space Up}|1|0|Send|||||16|
+12|a|{a Down}|1|1000|Send|||||17|
+13|a|{a Up}|1|0|Send|||||19|
+14|w|{w Down}|1|250|Send|||||20|
+15|w|{w Up}|1|0|Send|||||22|
+16|a|{a Down}|1|2100|Send|||||23|
+17|a|{a Up}|1|0|Send|||||25|
+18|w|{w Down}|1|3000|Send||||0xFF8080|26|
+19|w|{w Up}|1|0|Send||||0xFF8080|28|
+20|d|{d Down}|1|1500|Send||||0xFF8080|29|
+21|d|{d Up}|1|0|Send||||0xFF8080|31|
+22|s|{s Down}|1|1800|Send||||0xFF8080|32|
+23|s|{s Up}|1|0|Send||||0xFF8080|34|
+24|d|{d Down}|1|500|Send||||0xFF8080|35|
+25|d|{d Up}|1|0|Send||||0xFF8080|37|
+26|w|{w Down}|1|5000|Send||||0xFF8080|38|
+27|w|{w Up}|1|0|Send||||0xFF8080|40|
+28|d|{d Down}|1|2000|Send||||0xFF8080|41|
+29|d|{d Up}|1|0|Send||||0xFF8080|43|
+30|w|{w Down}|1|4000|Send||||0xFF8080|44|
+31|w|{w Up}|1|0|Send||||0xFF8080|46|
+32|s|{s Down}|1|500|Send||||0xFF8080|47|
+33|s|{s Up}|1|0|Send||||0xFF8080|49|
+34|d|{d Down}|1|3000|Send||||0xFF8080|50|
+35|d|{d Up}|1|0|Send||||0xFF8080|52|
+36|s|{s Down}|1|1200|Send||||0xFF8080|53|
+37|s|{s Up}|1|0|Send||||0xFF8080|55|
+38|a|{a Down}|1|3000|Send||||0xFF8080|56|
+39|a|{a Up}|1|0|Send||||0xFF8080|58|
+40|w|{w Down}|1|1000|Send||||0xFF8080|59|
+41|w|{w Up}|1|0|Send||||0xFF8080|61|
+42|d|{d Down}|1|1000|Send||||0xFF8080|62|
+43|d|{d Up}|1|0|Send||||0xFF8080|64|
+44|s|{s Down}|1|1900|Send||||0xFF8080|65|
+45|s|{s Up}|1|0|Send||||0xFF8080|67|
+46|d|{d Down}|1|150|Send||||0xFF8080|68|
+47|d|{d Up}|1|0|Send||||0xFF8080|70|
+48|[LoopStart]|LoopStart|10|0|Loop|||||71|
+49|[LoopStart]|LoopStart|6|0|Loop|||||73|
+50|w|{w Down}|1|100|Send|||||75|
+51|w|{w Up}|1|0|Send|||||77|
+52|a|{a Down}|1|600|Send|||||78|
+53|a|{a Up}|1|0|Send|||||80|
+54|w|{w Down}|1|100|Send|||||81|
+55|w|{w Up}|1|0|Send|||||83|
+56|d|{d Down}|1|600|Send|||||84|
+57|d|{d Up}|1|0|Send|||||86|
+58|[LoopEnd]|LoopEnd|1|0|Loop|||||87|
+59|[LoopStart]|LoopStart|6|0|Loop|||||88|
+60|s|{s Down}|1|100|Send|||||90|
+61|s|{s Up}|1|0|Send|||||92|
+62|a|{a Down}|1|600|Send|||||93|
+63|a|{a Up}|1|0|Send|||||95|
+64|s|{s Down}|1|100|Send|||||96|
+65|s|{s Up}|1|0|Send|||||98|
+66|d|{d Down}|1|600|Send|||||99|
+67|d|{d Up}|1|0|Send|||||101|
+68|[LoopEnd]|LoopEnd|1|0|Loop|||||102|
+69|[Text]|BAG CHECK|1|0|SendRaw|||||103|
+70|Continue, Continue, FoundX, FoundY|1390, 40, 1449, 86, 0x57D957, 0, Fast RGB|1|0|PixelSearch||Window|||104|
+71|If Image/Pixel Found||1|0|If_Statement|||||106|
+72|[Goto]|CONVERT|1|0|Goto|||||108|
+73|If Image/Pixel Found||1|0|If_Statement|||||109|
+74|[End If]|EndIf|1|0|If_Statement|||||111|
+75|[End If]|EndIf|1|0|If_Statement|||||112|
+76|[LoopEnd]|LoopEnd|1|0|Loop|||||113|
+77|[Label]|CONVERT|1|0|Label|||||114|
+78|s|{s Down}|1|2000|Send|||||115|
+79|s|{s Up}|1|0|Send|||||117|
+80|a|{a Down}|1|1500|Send|||||118|
+81|a|{a Up}|1|0|Send|||||120|
+82|Space|{Space Down}|1|100|Send|||||121|
+83|Space|{Space Up}|1|0|Send|||||123|
+84|s|{s Down}|1|2200|Send|||||124|
+85|s|{s Up}|1|0|Send|||||126|
+86|Space|{Space Down}|1|100|Send|||||127|
+87|Space|{Space Up}|1|0|Send|||||129|
+88|a|{a Down}|1|9000|Send|||||130|
+89|a|{a Up}|1|0|Send|||||132|
+90|d|{d Down}|1|600|Send|||||133|
+91|d|{d Up}|1|0|Send|||||135|
+92|s|{s Down}|1|1000|Send|||||136|
+93|s|{s Up}|1|0|Send|||||138|
+94|Space|{Space Down}|1|100|Send|||||139|
+95|Space|{Space Up}|1|0|Send|||||141|
+96|s|{s Down}|1|3000|Send|||||142|
+97|s|{s Up}|1|0|Send|||||144|
+98|d|{d Down}|1|3000|Send|||||145|
+99|d|{d Up}|1|0|Send|||||147|
+100|w|{w Down}|1|3000|Send|||||148|
+101|w|{w Up}|1|0|Send|||||150|
+102|d|{d Down}|1|2500|Send|||||151|
+103|d|{d Up}|1|0|Send|||||153|
+104|s|{s Down}|1|5000|Send|||||154|
+105|s|{s Up}|1|0|Send|||||156|
+106|w|{w Down}|1|200|Send|||||157|
+107|w|{w Up}|1|0|Send|||||159|
+108|e|{e Down}|1|100|Send|||||160|
+109|e|{e Up}|1|70000|Send|||||162|
+110|[Goto]|RESTART|1|0|Goto|||||164|
+

@@ -1,0 +1,97 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|[||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|s|{s Down}|1|1600|Send||||0xFF8080|1|
+2|s|{s Up}|1|0|Send||||0xFF8080|3|
+3|d|{d Down}|1|3000|Send||||0xFF8080|4|
+4|d|{d Up}|1|0|Send||||0xFF8080|6|
+5|d|{d Down}|1|1000|Send||||0xFF8080|7|
+6|d|{d Up}|1|0|Send||||0xFF8080|9|
+7|Space|{Space Down}|1|100|Send||||0xFF8080|10|
+8|Space|{Space Up}|1|1|Send||||0xFF8080|12|
+9|s|{s Down}|1|1000|Send||||0xFF8080|14|
+10|s|{s Up}|1|0|Send||||0xFF8080|16|
+11|a|{a Down}|1|2000|Send||||0xFF8080|17|
+12|a|{a Up}|1|0|Send||||0xFF8080|19|
+13|s|{s Down}|1|500|Send||||0xFF8080|20|
+14|s|{s Up}|1|0|Send||||0xFF8080|22|
+15|Space|{Space Down}|1|100|Send||||0xFF8080|23|
+16|Space|{Space Up}|1|1|Send||||0xFF8080|25|
+17|s|{s Down}|1|1000|Send||||0xFF8080|27|
+18|s|{s Up}|1|0|Send||||0xFF8080|29|
+19|s|{s Down}|1|1000|Send||||0xFF8080|30|
+20|s|{s Up}|1|0|Send||||0xFF8080|32|
+21|a|{a Down}|1|2500|Send||||0xFF8080|33|
+22|a|{a Up}|1|0|Send||||0xFF8080|35|
+23|[Label]|RESTART|1|0|Label|||||36|
+24|w|{w Down}|1|2000|Send|||||37|
+25|w|{w Up}|1|0|Send|||||39|
+26|[LoopStart]|LoopStart|30|0|Loop|||||40|
+27|[LoopStart]|LoopStart|7|0|Loop||||||
+28|[LoopStart]|LoopStart|2|0|Loop|||||42|
+29|[Text]|BAG CHECK|1|0|SendRaw|||||99|
+30|Continue, Continue, FoundX, FoundY|1392, 37, 1450, 93, 0x57D957, 0, Fast RGB|1|0|PixelSearch||Window|||100|
+31|If Image/Pixel Found||1|0|If_Statement|||||102|
+32|[Goto]|CONVERT|1|0|Goto|||||104|
+33|[End If]|EndIf|1|0|If_Statement|||||105|
+34|w|{w Down}|1|1000|Send|||||44|
+35|w|{w Up}|1|0|Send|||||46|
+36|d|{d Down}|1|150|Send|||||47|
+37|d|{d Up}|1|0|Send|||||49|
+38|s|{s Down}|1|1000|Send|||||50|
+39|s|{s Up}|1|0|Send|||||52|
+40|d|{d Down}|1|150|Send|||||53|
+41|d|{d Up}|1|0|Send|||||55|
+42|w|{w Down}|1|1000|Send|||||56|
+43|w|{w Up}|1|0|Send|||||58|
+44|d|{d Down}|1|150|Send|||||59|
+45|d|{d Up}|1|0|Send|||||61|
+46|s|{s Down}|1|1000|Send|||||62|
+47|s|{s Up}|1|0|Send|||||64|
+48|d|{d Down}|1|150|Send|||||65|
+49|d|{d Up}|1|0|Send|||||67|
+50|[LoopEnd]|LoopEnd|1|0|Loop|||||68|
+51|[LoopStart]|LoopStart|2|0|Loop|||||69|
+52|w|{w Down}|1|1000|Send|||||71|
+53|w|{w Up}|1|0|Send|||||73|
+54|a|{a Down}|1|150|Send|||||74|
+55|a|{a Up}|1|0|Send|||||76|
+56|s|{s Down}|1|1000|Send|||||77|
+57|s|{s Up}|1|0|Send|||||79|
+58|a|{a Down}|1|150|Send|||||80|
+59|a|{a Up}|1|0|Send|||||82|
+60|w|{w Down}|1|1000|Send|||||83|
+61|w|{w Up}|1|0|Send|||||85|
+62|a|{a Down}|1|150|Send|||||86|
+63|a|{a Up}|1|0|Send|||||88|
+64|s|{s Down}|1|1000|Send|||||89|
+65|s|{s Up}|1|0|Send|||||91|
+66|a|{a Down}|1|150|Send|||||92|
+67|a|{a Up}|1|0|Send|||||94|
+68|[LoopEnd]|LoopEnd|1|0|Loop|||||95|
+69|[LoopEnd]|LoopEnd|1|0|Loop||||||
+70|w|{w Down}|1|1200|Send|||||96|
+71|w|{w Up}|1|0|Send|||||98|
+72|d|{d Down}|1|2000|Send|||||59|
+73|d|{d Up}|1|0|Send|||||61|
+74|a|{a Down}|1|2000|Send|||||92|
+75|a|{a Up}|1|0|Send|||||94|
+76|[LoopEnd]|LoopEnd|1|0|Loop|||||106|
+77|[Label]|CONVERT|1|0|Label|||||107|
+78|s|{s Down}|1|4000|Send|||||108|
+79|s|{s Up}|1|0|Send|||||110|
+80|d|{d Down}|1|3000|Send|||||111|
+81|d|{d Up}|1|0|Send|||||113|
+82|a|{a Down}|1|600|Send||||0xFF8080|114|
+83|a|{a Up}|1|0|Send||||0xFF8080|116|
+84|w|{w Down}|1|2800|Send|||||117|
+85|w|{w Up}|1|0|Send|||||119|
+86|e|{e Down}|2|100|Send|||||120|
+87|e|{e Up}|1|0|Send|||||122|
+88|s|{s Down}|1|500|Send|||||123|
+89|s|{s Up}|1|0|Send|||||125|
+90|a|{a Down}|1|2000|Send||||0xFF8080|126|
+91|a|{a Up}|1|0|Send||||0xFF8080|128|
+92|[Goto]|RESTART|1|0|Goto|||||129|
+
